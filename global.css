@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--darkgray-100: hsl(0 0 22);
+	--darkgray-200: hsl(0 0 20);
+	--linen: hsl(28 42 91);
+	--gray-100: hsl(0 0 56);
+	--gray-200: hsl(0 0 15);
+	--lightgray-100: hsl(28 17 80);
+	--lightgray-200: hsla(28 17 80 / 8%);
+	--lightgray-300: hsla(28 17 80 / 4%);
+}
+
+*::-webkit-scrollbar {
+	width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 9999px;
+	background-color: var(--gray-100);
+}
+
+body {
+	font-size: 16px;
+	color: var(--linen);
+	background: var(--darkgray-100);
+	font-family: "Source Serif Pro", Cambria, Cochin, Georgia, Times,
+		"Times New Roman", serif;
+}
+
+input {
+	color: currentColor;
+	border: none;
+	background: transparent;
+	font-weight: 300;
+	font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+input::placeholder {
+	color: var(--lightgray-100);
+}
+
+input:focus, input:focus-visible {
+	outline: none;
+}
+
+button {
+	border: none;
+	box-shadow: none;
+	background: transparent;
+
+	color: currentColor;
+}
+
+button:hover{
+	background: var(--lightgray-200);
+}
+
+.app {
+	width: 100%;
+	min-height: 100dvh;
+}
+.navigation {
+	width: 320px !important;
+	overflow-y: scroll;
+}
+
+.h-screen {
+	height: 100dvh;
+}
+
+.w-screen {
+	width: 100dvw;
+}
+
+.font-inter {
+	font-weight: 300;
+	font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.text-xs {
+	font-size: 12px;
+}
+
+.bg-body {
+	background: var(--darkgray-100) !important;
+}
+.bg-dark {
+	background: var(--darkgray-200) !important;
+}
+.bg-darker {
+	background: var(--gray-200) !important;
+}
+.bg-light {
+	background: var(--lightgray-300) !important;
+}
+.bg-lighter {
+	background: var(--lightgray-200) !important;
+}
+
+.border-lightgray {
+	border-color: var(--lightgray-200) !important;
+}
